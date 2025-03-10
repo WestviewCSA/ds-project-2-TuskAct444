@@ -1,0 +1,13 @@
+
+Design Plan - P2
+Due: 3/12/25 11:59pm
+
+After Reading the specs, start populating a list of things 
+you might have to do to finish this project.
+
+1) read the specs - understand
+
+Can only move north south west east
+No loops, wolverine shouldn't move back to tile already visited
+2) understand map based input files
+
