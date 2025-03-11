@@ -7,7 +7,15 @@ you might have to do to finish this project.
 
 1) read the specs - understand
 
-Can only move north south west east
+Can only move north south west east no SouthWest SouthEast NorthWest NorthEast
 No loops, wolverine shouldn't move back to tile already visited
+
 2) understand map based input files
 
+3) Legend - open areas (walkable) denoted by‘.’
+walls areas (non-walkable), denoted by‘@’
+a Wolverine’s starting position, denoted by‘W’
+the location of the Diamond Wolverine Buck ‘$’
+open walkway‘|’
+
+4)
