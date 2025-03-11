@@ -24,7 +24,29 @@ public class p2 {
 			int numCols 		= scanner.nextInt();
 			int numRooms	    = scanner.nextInt();
 			
+			int rowIndex = 0;
 			
+			//process the map!
+			while(scanner.hasNextLine()) {
+				//grab a line (one row of the map)
+				String row= scanner.nextLine();
+				
+				if(row.length()>0) {
+					for(int i = 0; i < numCols &&  i < row.length(); i++) {
+						char el = row.charAt(i);
+						tile obj = new tile(rowIndex , i , el);
+						
+						
+					}
+				}
+				
+				
+				
+				
+			}
+			
+				
+				
 			
 		}catch (FileNotFoundException e){
 			//handle
