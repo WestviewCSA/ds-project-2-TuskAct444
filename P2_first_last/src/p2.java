@@ -11,8 +11,15 @@ public class p2 {
 		readMap("Map 5");
 	}
 
-	
-	
+		boolean St    = false;	
+		boolean Qu    = false;
+		boolean Opt   = false;		
+		boolean Time  = false;
+		boolean In    = false;
+		boolean Out   = false;
+		boolean Help  = false;
+
+		
 	public static void readMap(String filename) {
 		
 		
@@ -44,14 +51,34 @@ public class p2 {
 				
 				
 			}
+	public static test1()
 			
+	public static void stackB(){
+			
+		}
+		
+	public static void QueueB(){
+			
+		}
 				
 				
 			
 		}catch (FileNotFoundException e){
 			//handle
+			System.out.println(e);
 		}
 		
+/*		
+		public static void inputRead(Scanner scanner); {
+			M = scanner.next();
+			N = scanner.next();
+			mazeNum = scanner.next();
+			
+			
+			while(scanner.hasNext());
+			
+		}
+*/		
 		
 		
 		
