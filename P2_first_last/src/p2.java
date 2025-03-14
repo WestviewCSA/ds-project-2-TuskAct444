@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.Queue;
 import java.util.Scanner;
 
 public class p2 {
@@ -19,6 +20,24 @@ public class p2 {
 		boolean Out   = false;
 		boolean Help  = false;
 
+		
+		
+		public static void queueData(tile[][] maze, int SRow, int SCol) {
+		
+		
+		Queue<E> <tile> queue = newLinkedList();
+		boolean[][] visited =
+		boolean[maze.length][maze[0].length];
+		queue.add(maze[SRow][SCol]);
+		visited[SRow][SCol] = true;
+		
+		
+		int [][] dRow = {-1, 1, 0, 0};
+		int [][] dCol = {0, 0, -1, 1};
+			while(queueB) {
+				
+			}
+		}
 		
 	public static void readMap(String filename) {
 		
@@ -47,18 +66,19 @@ public class p2 {
 					}
 				}
 				
-				
+			
 				
 				
 			}
 	public static test1()
 			
+	
 	public static void stackB(){
 			
 		}
 		
 	public static void QueueB(){
-			
+
 		}
 				
 				
@@ -86,6 +106,11 @@ public class p2 {
 		
 		
 		
+	}
+
+	private Queue<tile> newLinkedList() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 }
