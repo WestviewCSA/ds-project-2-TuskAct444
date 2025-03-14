@@ -4,7 +4,14 @@ import java.util.Queue;
 import java.util.Scanner;
 
 public class p2 {
-
+	boolean St    = false;	
+	boolean Qu    = false;
+	boolean Opt   = false;		
+	boolean Time  = false;
+	boolean In    = false;
+	boolean Out   = false;
+	boolean Help  = false;
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("p2");
@@ -12,13 +19,7 @@ public class p2 {
 		readMap("Map 5");
 	}
 
-		boolean St    = false;	
-		boolean Qu    = false;
-		boolean Opt   = false;		
-		boolean Time  = false;
-		boolean In    = false;
-		boolean Out   = false;
-		boolean Help  = false;
+		
 
 		
 		
@@ -26,6 +27,7 @@ public class p2 {
 		
 		
 		Queue<E> <tile> queue = newLinkedList();
+		
 		boolean[][] visited =
 		boolean[maze.length][maze[0].length];
 		queue.add(maze[SRow][SCol]);
@@ -34,8 +36,8 @@ public class p2 {
 		
 		int [][] dRow = {-1, 1, 0, 0};
 		int [][] dCol = {0, 0, -1, 1};
-			while(queueB) {
-				
+			while(!queue.isEmpty()) {
+				Tile current = queue.poll();
 			}
 		}
 		

@@ -1,19 +1,19 @@
 
 public class Map {
 
-	private Tile[][] map; //is 2D enough
+	private tile[][] map; //is 2D enough
 	private int maps, cols,rows;
-	public Map(Tile[][] map, int maps, int cols, int rows) {
+	public Map(tile[][] map, int maps, int cols, int rows) {
 		super();
 		this.map = map;
 		this.maps = maps;
 		this.cols = cols;
 		this.rows = rows;
 	}
-	public Tile[][] getMap() {
+	public tile[][] getMap() {
 		return map;
 	}
-	public void setMap(Tile[][] map) {
+	public void setMap(tile[][] map) {
 		this.map = map;
 	}
 	public int getMaps() {
