@@ -46,9 +46,24 @@ public class p2 {
 				int newRow = current.getRow() + dRow[i];
 				int newCOl = current.getCol() + dCol[i];
 
-				if(
+			 if (isValidMove(newRow, newCol, map)) {
+                   		 Tile neighbor = map.getMap()[newRow][newCol];
+                    	 if (!neighbor.isVisited() && neighbor.getValue() != '@') {
+                 	 //      queue.offer(neighbor);
+                      		  neighbor.setVisited(true);
+                    }
+                }
+
 			}
 		}
+		}
+	private static Tile fstart(){
+	 for (int i = 0; i < map.getRows(); i++) {
+            for (int j = 0; j < map.getCols(); j++) {
+                if (map.getMap()[i][j].getValue() == 'W') {
+                    return map.getMap()[i][j];
+
+	}
 		
 	public static void readMap(String filename) {
 		
