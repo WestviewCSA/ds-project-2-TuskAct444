@@ -38,6 +38,15 @@ public class p2 {
 		int [][] dCol = {0, 0, -1, 1};
 			while(!queue.isEmpty()) {
 				Tile current = queue.poll();
+			if(current.getValue() == '$'){
+				markPath(current);
+				break;
+			}
+			for(int i = 0; i < 4; i++){
+				int newRow = current.getRow() + dRow[i];
+				int newCOl = current.getCol() + dCol[i];
+
+				if(
 			}
 		}
 		
@@ -80,7 +89,7 @@ public class p2 {
 		}
 		
 	public static void QueueB(){
-
+			
 		}
 				
 				
