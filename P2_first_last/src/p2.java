@@ -92,7 +92,12 @@ public class p2 {
 					}
 				}
 				
-			
+	public static void mapMarker() {
+		while(target != null) {
+			target.set("+");
+			target = target.getPrevious();
+		}
+	}
 				
 				
 			}
@@ -100,7 +105,26 @@ public class p2 {
 			
 	
 	public static void stackB(){
-			
+			public void findPath(map map) {
+				Stack<Tile> stack = new stack<>();
+				Tile start = findStart(map);
+				stack.push(start);
+				stack.setVisited(true);
+				
+				int[] dRow = {-1, 1 , 0 , 0};
+				int[] dCol = {0, 0 , 1 , -1};
+				
+				while(stack != is.empty()) {
+					Tile current = stack.pop();
+					
+					if(current.getValue() == "$") {
+						
+					}
+				}
+				
+			}
+		
+		
 		}
 		
 	public static void QueueB(){
