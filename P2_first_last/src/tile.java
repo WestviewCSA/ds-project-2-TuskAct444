@@ -29,6 +29,21 @@ public class tile {
 	public void setType(char type) {
 		this.type = type;
 	}
+
+	public void setVisited(boolean b) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public boolean isVisited() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	public tile getPrevious() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 	

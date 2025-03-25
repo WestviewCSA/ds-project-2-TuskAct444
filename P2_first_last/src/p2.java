@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Queue;
 import java.util.LinkedList;
 import java.util.Scanner;
+import java.util.Stack;
 
 public class p2 {
     boolean St = false;
@@ -94,7 +95,7 @@ public class p2 {
 
     public static void mapMarker(tile target) {
         while (target != null) {
-            target.set("+");
+            target.setCol('+');
             target = target.getPrevious();
         }
     }
