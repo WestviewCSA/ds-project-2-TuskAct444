@@ -118,7 +118,21 @@ public class p2 {
 					Tile current = stack.pop();
 					
 					if(current.getValue() == "$") {
-						
+						markPath(current);
+						break;
+					}
+					for(int i = 0; i < 4; i++){
+						int newRow = current.getRow() + dRow[i];
+					        int newCol = current.getCol() + dCol[i];
+
+						if(isValidMove(newRow,newCol,map)){
+							Tile neighbor = map.getMap()[newRow][newCol];
+							if(!neighbor.isVisited() && neighbor.getValue() != '@'{
+								stack.push(neighbor);
+								neighbor.setVisited(true);
+							}
+						}
+
 					}
 				}
 				
